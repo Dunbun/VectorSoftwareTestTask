@@ -1,0 +1,1 @@
+SELECT * FROM myshop.products WHERE ProductName LIKE "C%"

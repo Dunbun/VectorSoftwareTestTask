@@ -1,0 +1,1 @@
+SELECT Price FROM myshop.products WHERE SupplierID IN (Select SupplierID FROM myshop.suppliers WHERE Country = "USA")

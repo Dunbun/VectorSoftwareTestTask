@@ -1,0 +1,1 @@
+SELECT * FROM myshop.products WHERE Price=(SELECT MIN(Price) FROM myshop.products)
