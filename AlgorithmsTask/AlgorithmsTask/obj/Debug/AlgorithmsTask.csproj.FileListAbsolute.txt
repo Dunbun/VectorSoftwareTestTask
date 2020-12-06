@@ -1,0 +1,12 @@
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.exe.config
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.exe
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.pdb
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.csprojAssemblyReference.cache
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.exe
+C:\Users\Serg\source\repos\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.pdb
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.exe.config
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.exe
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\bin\Debug\AlgorithmsTask.pdb
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.csprojAssemblyReference.cache
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.exe
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\AlgorithmsTask\AlgorithmsTask\obj\Debug\AlgorithmsTask.pdb
