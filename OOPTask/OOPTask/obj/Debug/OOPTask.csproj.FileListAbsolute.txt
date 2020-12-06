@@ -4,3 +4,9 @@ C:\Users\Serg\source\repos\OOPTask\OOPTask\bin\Debug\OOPTask.pdb
 C:\Users\Serg\source\repos\OOPTask\OOPTask\obj\Debug\OOPTask.csprojAssemblyReference.cache
 C:\Users\Serg\source\repos\OOPTask\OOPTask\obj\Debug\OOPTask.exe
 C:\Users\Serg\source\repos\OOPTask\OOPTask\obj\Debug\OOPTask.pdb
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\bin\Debug\OOPTask.exe.config
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\bin\Debug\OOPTask.exe
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\bin\Debug\OOPTask.pdb
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\obj\Debug\OOPTask.csprojAssemblyReference.cache
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\obj\Debug\OOPTask.exe
+C:\Users\Serg\source\repos\VectorSoftwareTestTask\OOPTask\OOPTask\obj\Debug\OOPTask.pdb

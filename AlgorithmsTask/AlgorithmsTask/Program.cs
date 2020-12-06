@@ -32,100 +32,100 @@ namespace AlgorithmsTask
         static string EncodeMethod(int AmountOfRails, string LineToEncode)
         {
             if (AmountOfRails < 2)
-                return null;
+                return String.Empty;
             if (LineToEncode.Length == 0)
                 return LineToEncode;
 
-            int StepInOuterRail = GetStepInOuterRail(AmountOfRails);
-            int SumOfFirstAndSecondInnerSteps = GetSumOfFirstAndSecondInnerSteps(AmountOfRails);
-            string [] EncodedLine = new string[LineToEncode.Length];
-            int StepPosition = 0;
-            int PositionInLineToEncode = 0;
-            int PositionInEncodedLine = 0;
-            int Step = 0;
-            bool IsInnerRail = false;
+            int stepInOuterRail = GetStepInOuterRail(AmountOfRails);
+            int sumOfFirstAndSecondInnerSteps = GetSumOfFirstAndSecondInnerSteps(AmountOfRails);
+            string [] encodedLine = new string[LineToEncode.Length];
+            int stepPosition = 0;
+            int positionInLineToEncode = 0;
+            int positionInEncodedLine = 0;
+            int step = 0;
+            bool isInnerRail = false;
             
-            for (int RailCounter = 1; RailCounter <= AmountOfRails; RailCounter++)
+            for (int railCounter = 1; railCounter <= AmountOfRails; railCounter++)
             {
-                if (RailCounter == 1 || RailCounter == AmountOfRails)
-                    Step = StepInOuterRail;
+                if (railCounter == 1 || railCounter == AmountOfRails)
+                    step = stepInOuterRail;
                 else
                 {
-                    Step = GetFirstStepInInnerRail(AmountOfRails, RailCounter);
-                    IsInnerRail = true;
+                    step = GetFirstStepInInnerRail(AmountOfRails, railCounter);
+                    isInnerRail = true;
                 }
 
-                StepPosition = PositionInLineToEncode;
+                stepPosition = positionInLineToEncode;
 
-                while (StepPosition < LineToEncode.Length)
+                while (stepPosition < LineToEncode.Length)
                 {
-                    EncodedLine[PositionInEncodedLine] = LineToEncode[StepPosition].ToString();
-                    PositionInEncodedLine++;
-                    StepPosition = StepPosition + Step;
+                    encodedLine[positionInEncodedLine] = LineToEncode[stepPosition].ToString();
+                    positionInEncodedLine++;
+                    stepPosition = stepPosition + step;
 
-                    if (IsInnerRail)      
-                        Step = SumOfFirstAndSecondInnerSteps - Step;                                      
+                    if (isInnerRail)      
+                        step = sumOfFirstAndSecondInnerSteps - step;                                      
                 }
 
-                PositionInLineToEncode++;
-                IsInnerRail = false;
+                positionInLineToEncode++;
+                isInnerRail = false;
             }
             
-            return string.Join("",EncodedLine);
+            return string.Join("",encodedLine);
         }
 
         static string DecodeMethod(int AmountOfRails, string EncodedLine)
         {
             if (AmountOfRails < 2)
-                return null;
+                return String.Empty;
             if (EncodedLine.Length == 0)
                 return EncodedLine;
 
-            int StepInOuterRail = GetStepInOuterRail(AmountOfRails);
-            int SumOfFirstAndSecondInnerSteps = GetSumOfFirstAndSecondInnerSteps(AmountOfRails);
-            string[] DecodedLine = new string[EncodedLine.Length];
-            int StepPosition = 0;
-            int PositionInDecodedLine = 0;
-            int PositionInEncodedLine = 0;
-            int Step = 0;
-            bool IsInnerRail = false;
+            int stepInOuterRail = GetStepInOuterRail(AmountOfRails);
+            int sumOfFirstAndSecondInnerSteps = GetSumOfFirstAndSecondInnerSteps(AmountOfRails);
+            string[] decodedLine = new string[EncodedLine.Length];
+            int stepPosition = 0;
+            int positionInDecodedLine = 0;
+            int positionInEncodedLine = 0;
+            int step = 0;
+            bool isInnerRail = false;
 
-            for (int RailCounter = 1; RailCounter <= AmountOfRails; RailCounter++)
+            for (int railCounter = 1; railCounter <= AmountOfRails; railCounter++)
             {
-                if (RailCounter == 1 || RailCounter == AmountOfRails)
-                    Step = StepInOuterRail;
+                if (railCounter == 1 || railCounter == AmountOfRails)
+                    step = stepInOuterRail;
                 else
                 {
-                    Step = GetFirstStepInInnerRail(AmountOfRails, RailCounter);
-                    IsInnerRail = true;
+                    step = GetFirstStepInInnerRail(AmountOfRails, railCounter);
+                    isInnerRail = true;
                 }
 
-                StepPosition = PositionInDecodedLine;
+                stepPosition = positionInDecodedLine;
 
-                while (StepPosition < DecodedLine.Length)
+                while (stepPosition < decodedLine.Length)
                 {
-                    DecodedLine[StepPosition] = EncodedLine[PositionInEncodedLine].ToString();
+                    decodedLine[stepPosition] = EncodedLine[positionInEncodedLine].ToString();
 
-                    PositionInEncodedLine++;
-                    StepPosition = StepPosition + Step;
+                    positionInEncodedLine++;
+                    stepPosition = stepPosition + step;
 
-                    if (IsInnerRail)
-                        Step = SumOfFirstAndSecondInnerSteps - Step;
+                    if (isInnerRail)
+                        step = sumOfFirstAndSecondInnerSteps - step;
                 }
 
-                PositionInDecodedLine++;
-                IsInnerRail = false;
+                positionInDecodedLine++;
+                isInnerRail = false;
             }
 
-            return string.Join("", DecodedLine);
+            return string.Join("", decodedLine);
         }
 
         static void Main(string[] args)
         {
             string TestLine = "WEAREDISCOVEREDFLEEATONCE";
 
-            Console.WriteLine( EncodeMethod(3, TestLine));
-            Console.WriteLine(DecodeMethod(3, "WECRLTEERDSOEEFEAOCAIVDEN"));
+            Console.WriteLine(EncodeMethod(11, "WEAREDISCOVEREDFLEEATONCE"));
+            Console.WriteLine(DecodeMethod(11, "WTEAOAENRECELEDFIDSECROEV"));
 
             Console.ReadKey();
         }
